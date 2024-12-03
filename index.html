@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="logo icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+          const nav = document.querySelector('.nav-links');
+          nav.classList.toggle('active');
+        }
+      </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#home">Innova<span class="tech">Tech</span></a>
+          </div>
+          <!-- Navigation Links -->
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+        </div>
+      </header>
+      
+      <section class="hero">
+        <div class="hero-container">
+          <!-- Text Content -->
+          <div class="hero-text">
+            <h1>Your Trusted Partner for Growth</h1>
+            <p>We provide innovative solutions to help your business thrive in the digital age. Let’s work together to achieve your goals.</p>
+            <div class="hero-buttons">
+              <a href="#services" class="btn btn-primary">Our Services</a>
+              <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+          </div>
+          
+          <!-- Hero Image -->
+          <div class="hero-image">
+            <img src="hero-image.png" alt="Professional Collaboration">
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="about-container">
+          <!-- Text Content -->
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+              We are a team of experienced professionals committed to delivering innovative solutions that drive business success. With years of expertise in [industry/service], we focus on creating value and fostering long-lasting relationships with our clients.
+            </p>
+            <p>
+              Our mission is to empower businesses by providing cutting-edge tools, strategies, and support to achieve their goals in the competitive market.
+            </p>
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          </div>
+      
+          <!-- Image Section -->
+          <div class="about-image">
+            <img src="about.jpg" alt="About Us">
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="services-container">
+          <!-- Section Title -->
+          <div class="services-header">
+            <h2>Our Services</h2>
+            <p>We offer a range of solutions to help your business grow and thrive. Explore our services designed to meet your unique needs.</p>
+          </div>
+      
+          <!-- Service Items -->
+          <div class="services-grid">
+            <div class="service-item">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Web Development</h3>
+              <p>Build stunning, responsive websites tailored to your business goals with cutting-edge technologies.</p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-palette"></i>
+              <h3>Graphic Design</h3>
+              <p>Create visually compelling designs that make your brand stand out in today's competitive market.</p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-chart-line"></i>
+              <h3>Digital Marketing</h3>
+              <p>Boost your online presence and engage with your audience through strategic marketing campaigns.</p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-search-dollar"></i>
+              <h3>SEO Optimization</h3>
+              <p>Improve your website's search engine rankings and drive organic traffic to your business.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Portfolio Section -->
+
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+          <!-- Section Title -->
+          <div class="portfolio-header">
+            <h2>Our Portfolio</h2>
+            <p>Explore our recent projects that demonstrate our expertise and creativity in delivering exceptional results.</p>
+          </div>
+      
+          <!-- Portfolio Grid -->
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="project01.jpg" alt="Project 1">
+              <div class="portfolio-overlay">
+                <h3>Project Title 1</h3>
+                <p>Short description of the project, its goals, and outcomes.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="project02.png" alt="Project 2">
+              <div class="portfolio-overlay">
+                <h3>Project Title 2</h3>
+                <p>Short description of the project, its goals, and outcomes.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="project03.png" alt="Project 3">
+              <div class="portfolio-overlay">
+                <h3>Project Title 3</h3>
+                <p>Short description of the project, its goals, and outcomes.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="project04.jpg" alt="Project 4">
+              <div class="portfolio-overlay">
+                <h3>Project Title 4</h3>
+                <p>Short description of the project, its goals, and outcomes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <!-- Section Title -->
+          <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Get in touch with us for any inquiries, collaborations, or support.</p>
+          </div>
+      
+          <!-- Contact Content -->
+          <div class="contact-content">
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <form action="#" method="POST">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Address</h4>
+                <p>123 Business Street, City, Country</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p>+123 456 7890</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>info@business.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo and Description -->
+          <div class="footer-logo">
+            <h2>Innova<span class="tech">Tech</span></h2>
+            <p>Your trusted partner for innovative solutions and business growth. Let’s build a brighter future together.</p>
+          </div>
+      
+          <!-- Navigation Links -->
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-phone-alt"></i> +1 (234) 567-890</p>
+            <p><i class="fas fa-envelope"></i> info@company.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Business Lane, City, Country</p>
+          </div>
+      
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 InnovaTech. All Rights Reserved.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>
